@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>练习jquery的选择器</title>
+        <script src="../js/jquery-1.11.0.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            // 练习使用基本选择器
+            //            $(document).ready(function () {
+            //                // 练习使用id选择器
+            //                var username1 = $("#username");
+            //                alert(username1.val());
+            //
+            //                // 练习使用元素选择器
+            //                var username2 = $("input");
+            //                alert(username2.length);
+            //
+            //                // 练习使用类选择器
+            //                var username3 = $(".myClass");
+            //                alert(username3.size());
+            //            });
+
+            // 练习使用层级选择器
+            $(function () {
+                // 后代选择器
+                $("#div02 + div").hide();
+            });
+        </script>
+    </head>
+    <body>
+        <!-- 练习使用基本选择器 -->
+        <!--<input type="text" id="username" class="myClass" name="username" value="uname">-->
+        <!--<input type="button" value="按钮" onclick="show()">-->
+
+        <!-- 练习使用层级选择器 -->
+        <form class="normal" id="form">
+            <div class="normal" id="div01">
+                <div class="normal" id="div05">
+                    <input class="normal" id="input09" value="input09">
+                    <input class="normal" id="input10" value="input10">
+                </div>
+                <input class="normal" id="input01" value="input01">
+                <input class="normal" id="input02" value="input02">
+            </div>
+
+            <div class="normal" id="div02">
+                <input class="normal" id="input03" value="input03">
+                <input class="normal" id="input04" value="input04">
+            </div>
+
+            <div class="normal" id="div07">
+                <input class="normal" id="input13" value="input13">
+                <input class="normal" id="input14" value="input14">
+            </div>
+
+            <div class="normal" id="div03">
+                <input class="normal" id="input05" value="input05">
+                <input class="normal" id="input06" value="input06">
+            </div>
+
+            <span class="normal" id="div06">
+                <div>
+                    <input class="normal" id="input11" value="input11">
+                    <input class="normal" id="input12" value="input12">
+                </div>
+            </span>
+        </form>
+        <div class="normal" id="div04">
+            <input class="normal" id="input07" value="input07">
+            <input class="normal" id="input08" value="input08">
+        </div>
+    </body>
+</html>
